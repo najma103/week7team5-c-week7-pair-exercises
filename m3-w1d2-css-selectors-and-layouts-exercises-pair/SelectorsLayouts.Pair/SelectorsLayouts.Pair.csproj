@@ -66,6 +66,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Fly By Night Bank\index.html" />
+    <Content Include="Fly By Night Bank\Step1.css" />
+    <Content Include="Fly By Night Bank\Step2.css" />
+    <Content Include="Fly By Night Bank\Step3.css" />
+    <Content Include="Fly By Night Bank\Step4.css" />
+    <Content Include="Fly By Night Bank\Step5.css" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

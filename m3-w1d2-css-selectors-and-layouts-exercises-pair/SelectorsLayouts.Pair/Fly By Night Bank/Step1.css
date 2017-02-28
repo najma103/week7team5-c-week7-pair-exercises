@@ -1,0 +1,31 @@
+﻿a {
+    color: #33cc33;
+    font-weight: bold;
+    display: block;
+    padding-left: 35px;
+    text-decoration: none;
+}
+#topheader {
+    background-color: #2e2e2e;
+    color: white;
+}
+#navigationbar {
+    background-color: #f2f2f2;
+    margin-bottom: 15px;
+}
+#footer {
+    background-color: #b3b3b3;
+}
+.pagesections {
+    background-color: #ccffcc;
+}
+img {
+    background-color: white;
+    max-height: 200px;
+}
+h1 {
+    color: #33cc33;
+    font-family: Arial; 
+    font-weight: normal;
+    font-size: 1.75em;
+}
