@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "MovieDetail";
+}
+
+
+@using TechElevator.Web.Models;
+@model Movie
+
+<section>
+    <h1>@Model.Name (@Model.YearReleased)</h1>
+    <h3><strong>Runtime: </strong> @Model.RunningTime</h3>
+    <p>@Model.Description</p>
+    <h3><strong>Cast </strong></h3>
+
+    <table>
+        @foreach (var cast in Model.Cast)
+        {
+            <tr>
+                <td>@cast.ToString()</td>
+            </tr>
+        }
+    </table>
+    
+     <h3><strong>Show Times</strong></h3>
+    <br />
+    <table>
+        <tr>
+            <th><strong>Start Time</strong></th>
+            <th><strong>Theatre</strong></th>
+        </tr>
+        @foreach (var show in Model.ShowTimes)
+        {
+            <tr>
+                <td>@show.StartTime</td>
+                <td>@show.Theatre</td>
+            </tr>
+        }
+    </table>
+    @Html.ActionLink("Back to List", "MovieList", "Home")
+</section>

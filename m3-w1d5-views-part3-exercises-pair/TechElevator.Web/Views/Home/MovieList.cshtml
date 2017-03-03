@@ -20,7 +20,7 @@
         @foreach (Movie movie in Model)
         {
             <tr>
-                <td>@Html.ActionLink("View", "MovieList", new { movie.Id })</td>
+                <td>@Html.ActionLink("View", "MovieDetail", new { movie.Id })</td>
                 <td>@movie.Name</td>
                 <td>@movie.Genre</td>
                 <td>@movie.RunningTime</td>
