@@ -1,0 +1,50 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+#PageContentContainer {
+    width: 80%;
+    background-color: #f2f2f2;
+    vertical-align: top;
+    border-radius: 2%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    min-height: 500px;
+}
+#AccountListTable {
+    margin-left: auto;
+    margin-right: auto;
+}
+#AccountListTable td {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#TransactionList {
+    margin-left: auto;
+    margin-right: auto;
+}
+#TransactionList td {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#PageContentContainer p {
+    margin: 0px;
+}
+h1 {
+    color: #009900;
+}

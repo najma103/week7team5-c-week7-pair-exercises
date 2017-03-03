@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "BankAccountDetail";
+}
+
+@using FlyByNight.Web.Models;
+@model BankAccount
+
+<div id="PageContentContainer">
+    <h1>@Model.AccountNickname</h1>
+    <p><strong>Balance:</strong> @Model.Balance</p>
+    <p><strong>Account Num:</strong> @Model.AccountNumber</p>
+    <p><strong>Account Type:</strong> @Model.AccountType</p>
+    <br />
+    <p>Transaction History</p>
+    <br />
+    <table id="TransactionList">
+        <tr>
+            <th><strong>Date</strong></th>
+            <th><strong>Amount</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    @foreach (var transaction in Model.Transactions)
+    {
+        <tr>
+            <td>@transaction.Date.ToShortDateString()</td>
+            <td>@transaction.Amount</td>
+            <td>@transaction.Description</td>
+        </tr>
+    }
+    </table>
+    @Html.ActionLink("Back to List","BankAccountList","Home")
+</div>
+
+
