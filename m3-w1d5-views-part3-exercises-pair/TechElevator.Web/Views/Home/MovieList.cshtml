@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "MovieList";
+}
+
+
+@using TechElevator.Web.Models;
+@model List<Movie>
+
+
+<section>
+    <p><strong>Local Movie Listing</strong></p>
+    <table>
+        <tr>
+            <th></th>
+            <th>Movie</th>
+            <th>Genre</th>
+            <th>Runtime(min)</th>
+        </tr>
+        @foreach (Movie movie in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink("View", "MovieList", new { movie.Id })</td>
+                <td>@movie.Name</td>
+                <td>@movie.Genre</td>
+                <td>@movie.RunningTime</td>
+            </tr>
+        }
+    </table>
+</section>
+
+
+
