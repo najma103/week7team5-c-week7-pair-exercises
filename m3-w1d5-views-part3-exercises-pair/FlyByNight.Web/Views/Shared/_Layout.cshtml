@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Fly By Night Bank - Home</title>
+    <link rel="stylesheet" href="~/Content/stylesheet.css" />
+    <link rel="stylesheet" href="~/Content/Site.css" />
+</head>
+<body>
+    <header>
+        <img src="~/Content/img/flybynightlogo.png" alt="Fly By Night Bank" />
+        <p>At Fly By Night, we treat your money as if it's our own. Really. Our own.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="~/">Home</a></li>
+            <li><a href="#">Log In or Enroll</a></li>
+            <li><a href="#">Why Fly By Night</a></li>
+            <li><a href="~/Home/BankAccountList">Bank Account List</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        @RenderBody()
+    </div>
+    <footer>
+        Fly By Night Bank | Varying Locations | josh@flybynightbank.com
+    </footer>
+</body>
+</html>
